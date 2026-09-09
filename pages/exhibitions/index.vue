@@ -213,8 +213,68 @@ const { exhibitions } = useExhibitionsData()
   background-color: #f2f2f2;
 }
 
+/* Current Exhibition Card (Inverted Black Background) */
 .exhibition-card.is-current {
-  border-top: 3px solid var(--color-ink);
+  background-color: var(--color-ink);
+  color: #ffffff;
+  border-top: 3px solid #ffffff;
+}
+
+.exhibition-card.is-current:hover {
+  background-color: #121212;
+}
+
+.exhibition-card.is-current .ex-number {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.exhibition-card.is-current .ex-status-badge {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.exhibition-card.is-current .ex-status-badge .badge-dot {
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.exhibition-card.is-current .ex-title {
+  color: #ffffff;
+}
+
+.exhibition-card.is-current .ex-title:hover {
+  opacity: 0.8;
+}
+
+.exhibition-card.is-current .ex-desc {
+  color: #d1d5db;
+}
+
+.exhibition-card.is-current .tag-chip {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.exhibition-card.is-current .card-footer {
+  border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.exhibition-card.is-current .footer-meta {
+  color: #e5e7eb;
+}
+
+.exhibition-card.is-current .ex-action-btn {
+  background: #ffffff;
+  color: #080808;
+  font-weight: 700;
+}
+
+.exhibition-card.is-current .ex-action-btn:hover {
+  background: #eaeaea;
+  opacity: 1;
 }
 
 .card-top {
